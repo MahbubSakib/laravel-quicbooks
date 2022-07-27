@@ -1,7 +1,4 @@
 @extends('layouts.app')
-<head>
-    <meta name="google-site-verification" content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY" />
-</head>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
