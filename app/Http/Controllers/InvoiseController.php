@@ -13,9 +13,6 @@ use QuickBooksOnline\API\Core\Http\Serialization\XmlObjectSerializer;
 use QuickBooksOnline\API\Facades\Invoice;
 use QuickBooksOnline\API\Facades\Line;
 
-use Carbon\Carbon;
-use Carbon\CarbonInterval;
-use DateTime;
 
 class InvoiseController extends Controller
 {
@@ -28,15 +25,6 @@ class InvoiseController extends Controller
 
     public function index()
     {
-        // $value = '3600';
-        // $dt = Carbon::now();
-        // $hours = $dt->diffInHours($dt->copy()->addSeconds($value));
-        // $minutes = $dt->diffInMinutes($dt->copy()->addSeconds($value)->subHours($hours));
-        // // $ss = CarbonInterval::hours($hours)->minutes($minutes)->forHumans();
-        // $ss = date("Y-m-d H:i:s", 1388516402);;
-        // dd($ss);
-
-
         $accessToken = auth()->user()->token['access_token'];
         $refreshToken = auth()->user()->token['refresh_token'];
         $realmId = auth()->user()->token['realm_id'];
@@ -49,7 +37,7 @@ class InvoiseController extends Controller
             $dataService = DataService::Configure(array(
                 'auth_mode' => 'oauth2',
                 'ClientID' => "Your client id",
-                'ClientSecret' => "Your client secert",
+                'ClientSecret' => "Your client secret",
                 'accessTokenKey' => $accessToken,
                 'refreshTokenKey' => $refreshToken,
                 'QBORealmID' => $realmId,
