@@ -50,7 +50,7 @@
                     <a href="{{ route('delete', $key->Id) }}">
                         Delete
                     </a>    
-                </td>
+                </td>ss
             </tr>
         @endforeach
     </tbody>
