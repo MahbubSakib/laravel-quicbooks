@@ -1,6 +1,6 @@
 @extends('layouts.app')
 <head>
-    <meta name="google-site-verification" content="zzFr5n3Uus6VjU9jVTviZdHB_z2IR8jdTYIZqYuBbII" />
+    <meta name="google-site-verification" content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY" />
 </head>
 @section('content')
 <div class="container">
