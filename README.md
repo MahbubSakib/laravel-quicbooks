@@ -9,7 +9,7 @@
 
 ## Laravel-quickbooks-integration
 
-Firstly, quickbooks php sdk has integrated with this laravel project. CRUD functionality of Invoice has been done here also.
+Quickbooks php sdk has integrated with this laravel project. CRUD functionality of Invoice has been done here also.
 
 ## License
 
